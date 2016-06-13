@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/header_fragment"
+        android:name="ru.test.example.myprofileapplication.fragment.ProfileInfoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:layout="@layout/fragment_profile_info" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/profile_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/header_fragment"
+        app:layout_anchorGravity="bottom|right|end"
+        fab:fab_shadow="true"/>
+
+    <fragment
+        android:id="@+id/addresses_fragment"
+        android:name="ru.test.example.myprofileapplication.fragment.ProfileAddressListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        tools:layout="@layout/fragment_profile_addresses" />
+
+</android.support.design.widget.CoordinatorLayout>
