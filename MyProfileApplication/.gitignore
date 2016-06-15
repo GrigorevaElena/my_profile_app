@@ -1,10 +1,10 @@
-*.iml
 .gradle
 /local.properties
-*.idea
+**/build
+/gradle
 gradlew
-gradle.properties
 gradlew.bat
+**.iml
+**/.idea
 .DS_Store
-/build
-/captures
+.out

@@ -10,9 +10,11 @@
         android:id="@+id/addresses_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:paddingTop="@dimen/addresses_title_vertical_padding"
+        android:paddingBottom="@dimen/addresses_title_vertical_padding"
+        android:paddingLeft="@dimen/address_item_horizontal_padding"
         android:text="Адреса"
-        android:textSize="20sp" />
+        android:textSize="@dimen/addresses_title_text_size" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/place_list"
