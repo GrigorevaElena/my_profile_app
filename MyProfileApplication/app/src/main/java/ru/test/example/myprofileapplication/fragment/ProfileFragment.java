@@ -4,9 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -15,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.design.widget.FloatingActionButton;
 import ru.test.example.myprofileapplication.R;
-import ru.test.example.myprofileapplication.model.ProfileViewModel;
 
 /**
  * Created by ev.grigoreva on 04.06.16.
@@ -45,7 +41,7 @@ public class ProfileFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.edit_profile:
+            case R.id.profile_edit:
                 if(profileInterface != null){
                     profileInterface.editProfileAction();
                 }

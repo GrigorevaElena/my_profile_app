@@ -2,5 +2,8 @@
     <string name="app_name">MyProfileApplication</string>
     <string name="price_format">%dp.</string>
     <string name="address_type">основной,</string>
-    <string name="edit_profile">Редактировать профиль</string>
+    <string name="profile_edit">Редактировать профиль</string>
+    <string name="profile_exit">Выйти</string>
+    <string name="fb_connected">fb_connected</string>
+    <string name="addresses_title">Адреса</string>
 </resources>

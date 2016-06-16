@@ -10,10 +10,14 @@
         android:id="@+id/addresses_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/addresses_title_vertical_padding"
         android:paddingBottom="@dimen/addresses_title_vertical_padding"
+        android:paddingEnd="0dp"
         android:paddingLeft="@dimen/address_item_horizontal_padding"
-        android:text="Адреса"
+        android:paddingRight="0dp"
+        android:paddingStart="@dimen/address_item_horizontal_padding"
+        android:paddingTop="@dimen/addresses_title_vertical_padding"
+        android:text="@string/addresses_title"
+        android:textColor="@color/colorAddressTextNormalGray"
         android:textSize="@dimen/addresses_title_text_size" />
 
     <android.support.v7.widget.RecyclerView

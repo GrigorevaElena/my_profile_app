@@ -13,25 +13,31 @@
         android:layout_height="@dimen/profile_image_header_size"
         tools:layout="@layout/fragment_profile_info" />
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <fragment
+            android:id="@+id/addresses_fragment"
+            android:name="ru.test.example.myprofileapplication.fragment.ProfileAddressListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/profile_image_header_size"
+            tools:layout="@layout/fragment_profile_addresses" />
+    </android.support.v4.widget.NestedScrollView>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/profile_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/profile_fab_margin"
         android:src="@drawable/ic_add_white_18dp"
-        app:backgroundTint="@android:color/holo_orange_light"
-        app:fabSize="normal"
+        app:backgroundTint="@color/colorProfileFabOrange"
         app:elevation="@dimen/profile_fab_elevation"
+        app:fabSize="normal"
         app:layout_anchor="@+id/header_fragment"
         app:layout_anchorGravity="bottom|right|end"
-        fab:fab_shadow="true"/>
-
-    <fragment
-        android:id="@+id/addresses_fragment"
-        android:name="ru.test.example.myprofileapplication.fragment.ProfileAddressListFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/profile_image_header_size"
-        tools:layout="@layout/fragment_profile_addresses" />
+        fab:fab_shadow="true" />
 
 </android.support.design.widget.CoordinatorLayout>
