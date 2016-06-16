@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/colorTextGreen"
+            android:textColor="@color/colorProfileInfoTextGreen"
             android:textSize="@dimen/profile_phone_text_size"
             tools:text="+7 (905) 235-88-41" />
 

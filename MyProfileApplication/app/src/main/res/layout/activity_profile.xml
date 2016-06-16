@@ -5,10 +5,10 @@
     android:layout_height="match_parent">
 
     <fragment
+        android:id="@+id/profile_fragment"
         android:name="ru.test.example.myprofileapplication.fragment.ProfileFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/profile_fragment"
         tools:layout="@layout/fragment_profile" />
 
     <android.support.v7.widget.Toolbar

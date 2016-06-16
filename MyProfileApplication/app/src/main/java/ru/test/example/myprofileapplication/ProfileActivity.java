@@ -15,8 +15,10 @@ public class ProfileActivity extends AppCompatActivity implements ProfileFragmen
         setContentView(R.layout.activity_profile);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.profile_toolbar);
+        assert toolbar != null;
+
         toolbar.setTitle("");
-        toolbar.setNavigationIcon(R.drawable.ic_menu_white_18dp);
+        toolbar.setNavigationIcon(R.drawable.ico_burger);
         setSupportActionBar(toolbar);
     }
 

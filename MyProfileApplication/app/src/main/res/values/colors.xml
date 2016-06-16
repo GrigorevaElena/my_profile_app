@@ -4,8 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="colorTextGreen">#91BD59</color>
-    <color name="colorProfileFabOrange">#FFAD1B</color>
+    <color name="colorGreenPrimary">#5B960E</color>
+
+    <color name="colorProfileInfoFabOrange">#FFAD1B</color>
+    <color name="colorProfileInfoTextGreen">#91BD59</color>
 
     <color name="colorAddressTextGreen">#5B960E</color>
     <color name="colorAddressTextLightGray">#D6D5D3</color>

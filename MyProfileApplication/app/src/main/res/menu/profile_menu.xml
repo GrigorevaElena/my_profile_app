@@ -3,13 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/profile_edit"
-        android:icon="@drawable/ic_create_white_18dp"
+        android:icon="@drawable/ico_pen"
         android:title="@string/profile_edit"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="collapseActionView"/>
 
     <item
         android:id="@+id/profile_exit"
-        android:icon="@drawable/ic_create_white_18dp"
         android:title="@string/profile_exit"
         app:showAsAction="collapseActionView"/>
 </menu>
