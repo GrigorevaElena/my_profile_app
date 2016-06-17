@@ -3,81 +3,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/header_container"
+    android:paddingTop="30dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/salat"
+    android:background="@drawable/profile_header_background"
     android:gravity="center">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/icon_container"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true">
 
         <ImageView
             android:id="@+id/facebook_icon"
-            android:layout_width="@dimen/profile_contacts_icon_size"
-            android:layout_height="@dimen/profile_contacts_icon_size"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/profile_icon"
-            android:layout_toStartOf="@+id/profile_icon"
-            android:alpha="0.7"
-            android:src="@drawable/ic_sentiment_satisfied_white_48dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.5"
+            android:src="@drawable/ico_fb" />
 
         <ImageView
             android:id="@+id/profile_icon"
-            android:layout_width="@dimen/profile_big_icon_size"
-            android:layout_height="@dimen/profile_big_icon_size"
-            android:layout_centerInParent="true"
-            android:alpha="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/profile_big_icon_horizontal_margin"
             android:layout_marginRight="@dimen/profile_big_icon_horizontal_margin"
-            android:src="@drawable/ic_sentiment_satisfied_white_48dp" />
+            android:src="@drawable/ico_profile_auth" />
 
         <ImageView
             android:id="@+id/vk_icon"
-            android:layout_width="@dimen/profile_contacts_icon_size"
-            android:layout_height="@dimen/profile_contacts_icon_size"
-            android:alpha="0.7"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/profile_icon"
-            android:layout_toEndOf="@+id/profile_icon"
-            android:src="@drawable/ic_sentiment_satisfied_white_48dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ico_vk" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/icon_container">
+        android:layout_below="@+id/icon_container"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/name"
+            android:paddingTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:shadowColor="@android:color/holo_green_dark"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowRadius="5"
-            tools:text="Игорь Иванов"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/profile_name_text_size" />
+            android:textSize="@dimen/profile_name_text_size"
+            tools:text="Игорь Иванов" />
 
         <TextView
             android:id="@+id/phone"
+            android:paddingTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
             android:layout_centerHorizontal="true"
-            android:shadowColor="@android:color/holo_green_dark"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowRadius="5"
-            tools:text="+7 (905) 235-88-41"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/profile_phone_text_size" />
+            android:textColor="@color/colorProfileInfoTextGreen"
+            android:textSize="@dimen/profile_phone_text_size"
+            tools:text="+7 (905) 235-88-41" />
 
     </RelativeLayout>
 

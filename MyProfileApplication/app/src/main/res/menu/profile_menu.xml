@@ -2,8 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/edit_profile"
-        android:icon="@drawable/ic_create_white_18dp"
-        android:title="@string/edit_profile"
-        app:showAsAction="always"/>
+        android:id="@+id/profile_edit"
+        android:icon="@drawable/ico_pen"
+        android:title="@string/profile_edit"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/profile_exit"
+        android:title="@string/profile_exit"
+        app:showAsAction="collapseActionView"/>
 </menu>
